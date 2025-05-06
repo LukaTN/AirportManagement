@@ -11,9 +11,9 @@ namespace AM.ApplicationCore.Domain
         public static Plane BoingPlane = new Plane { PlaneType = PlaneType.Boeing, Capacity = 150, ManufactureDate = new DateTime(2015, 02, 03) };
         public static Plane Airbusplane = new Plane { PlaneType = PlaneType.Airbus, Capacity = 250, ManufactureDate = new DateTime(2020, 11, 11) };
         // Staffs
-        public static Staff captain = new Staff { FirstName = "captain", LastName = "captain", EmailAddress = "captain.captain@gmail.com", BirthDate = new DateTime(1965, 01, 01), EmploymentDate = new DateTime(1999, 01, 01), Salary = 99999 };
-        public static Staff hostess1 = new Staff { FirstName = "hostess1", LastName = "hostess1", EmailAddress = "hostess1.hostess1@gmail.com", BirthDate = new DateTime(1995, 01, 01), EmploymentDate = new DateTime(2020, 01, 01), Salary = 999,PassportNumber="3" };
-        public static Staff hostess2 = new Staff { FirstName = "hostess2", LastName = "hostess2", EmailAddress = "hostess2.hostess2@gmail.com", BirthDate = new DateTime(1996, 01, 01), EmploymentDate = new DateTime(2020, 01, 01), Salary = 999 };
+        public static Staff captain = new Staff { FirstName = "captain", LastName = "captain", EmailAddress = "captain.captain@gmail.com", BirthDate = new DateTime(1965, 01, 01), EmployementDate = new DateTime(1999, 01, 01), Salary = 99999 };
+        public static Staff hostess1 = new Staff { FirstName = "hostess1", LastName = "hostess1", EmailAddress = "hostess1.hostess1@gmail.com", BirthDate = new DateTime(1995, 01, 01), EmployementDate = new DateTime(2020, 01, 01), Salary = 999,PassportNumber="3" };
+        public static Staff hostess2 = new Staff { FirstName = "hostess2", LastName = "hostess2", EmailAddress = "hostess2.hostess2@gmail.com", BirthDate = new DateTime(1996, 01, 01), EmployementDate = new DateTime(2020, 01, 01), Salary = 999 };
         //// Travellers
         public static Traveller traveller1 = new Traveller { FirstName = "traveller1", LastName = "traveller1", EmailAddress = "traveller1.traveller1@gmail.com", BirthDate = new DateTime(1980, 01, 01), HealthInformation = "no troubles", Nationality = "American" };
         public static Traveller traveller2 = new Traveller { FirstName = "traveller2", LastName = "traveller2", EmailAddress = "traveller2.traveller2@gmail.com", BirthDate = new DateTime(1981, 01, 01), HealthInformation = "Some troubles", Nationality = "French" };

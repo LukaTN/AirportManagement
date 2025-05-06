@@ -17,16 +17,16 @@ namespace AM.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PassportNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PassportNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     TelNumber = table.Column<int>(type: "int", nullable: false),
+                    EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
-                    EmploymentDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Function = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Salary = table.Column<double>(type: "float", nullable: true),
+                    EmployementDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Salary = table.Column<float>(type: "real", nullable: true),
                     HealthInformation = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Nationality = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -56,11 +56,11 @@ namespace AM.Infrastructure.Migrations
                 {
                     FlightId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    FlightDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EstimatedDuration = table.Column<int>(type: "int", nullable: false),
+                    EffectiveArrival = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Departure = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Destination = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EffectiveArrival = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EstimatedDuration = table.Column<int>(type: "int", nullable: false),
-                    FlightDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Planeid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

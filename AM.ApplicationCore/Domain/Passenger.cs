@@ -16,6 +16,8 @@ namespace AM.ApplicationCore.Domain
         public string EmailAddress { get; set; }
         public virtual List<Flight> Flights { get; set; }
 
+        public int Id { get; set; }
+
 
 
         public bool checkprofile(string nom, string prenom, string email = null)
@@ -33,7 +35,7 @@ namespace AM.ApplicationCore.Domain
 
         public override string ToString()
         {
-            return $"Id: {Id}, FirstName: {FirstName}, LastName: {LastName}, EmailAddress: {EmailAddress}, " +
+            return $"FirstName: {FirstName}, LastName: {LastName}, EmailAddress: {EmailAddress}, " +
                    $"BirthDate: {BirthDate}, PassportNumber: {PassportNumber}, TelNumber: {TelNumber}";
         }
     }

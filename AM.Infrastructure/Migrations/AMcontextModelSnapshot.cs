@@ -142,15 +142,15 @@ namespace AM.Infrastructure.Migrations
                 {
                     b.HasBaseType("AM.ApplicationCore.Domain.Passenger");
 
-                    b.Property<DateTime>("EmploymentDate")
+                    b.Property<DateTime>("EmployementDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Function")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Salary")
-                        .HasColumnType("float");
+                    b.Property<float>("Salary")
+                        .HasColumnType("real");
 
                     b.HasDiscriminator().HasValue("Staff");
                 });
